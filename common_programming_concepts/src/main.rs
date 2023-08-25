@@ -55,4 +55,63 @@ fn main() {
     //arrays - elements must have same type, fixed length
     // let a = [1,2,3,4];
     // let first = a[0];
+
+    //functions
+    //calling func input - arguements
+    // another_function(7);
+
+    //statements - do not return anything
+    //expression - returns a value(does not end with semicolon)
+
+    //calling fuc with return value
+    // let x = five();
+    // println!("value of five = {x}");
+    
+    // control flow
+
+    //if else syntax is like any other lang
+    // condition must return a bool, 
+    //unlike JS or ruby which does type conversion
+    //rust gives an err
+    // let number = 3;
+    // if number != 0 {
+    //     println!("number was something other than zero");
+    // }
+    // else if for multiple condition, if there is too many use match
+    //when if else return values, each arm must return same type
+    //bellow program will not compile
+    // let condition = true;
+    // let number = if condition { 5 } else { "six" };
+    // println!("The value of number is: {number}");
+    
+    //loops - loop labels must have '(a single quote) infront
+    // 'looping_loop : loop{
+    //     println!("looping!");
+    // }
+    //while loop
+    // let mut number = 3;
+    // while number != 0 {
+    //     println!("{number}!");
+
+    //     number -= 1;
+    // }
+
+    // for loops are better than while loop and more safe, less error prone
+    // for element in a {
+    //     println!("the value is: {element}");
+    // }
+    // this is because if the array size changes, u need to also change the loop condition in while, 
+    //in for loop no other variable need to changed nor the condition.
+    // also in while each time complier has to allocate time to check whether the index is within the index is within the range.
+
 }
+
+//func definition input - parameter
+// fn another_function(x:i32){
+//     // println!("another function");
+//     // println!("the value of x is {x}");    
+// }
+
+// fn five()->i32{
+//     5
+// }
