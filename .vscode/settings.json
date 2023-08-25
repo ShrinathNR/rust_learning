@@ -1,0 +1,6 @@
+{
+    "rust-analyzer.linkedProjects": [
+        "./common_programming_concepts/Cargo.toml",
+
+    ]
+}
