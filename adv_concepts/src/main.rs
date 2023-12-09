@@ -1,3 +1,5 @@
+mod structs;
+use structs::hello;
 fn main() {
-    println!("Hello, world!");
+    hello();
 }
