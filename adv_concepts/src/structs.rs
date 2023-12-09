@@ -1,34 +1,34 @@
 //conventional struct
-#[derive(Debug)]
-struct User {
-    name:String,
-    active:bool,
-    email:String,
-    signin_count:u16,
-}
+// #[derive(Debug)]
+// struct User {
+//     name:String,
+//     active:bool,
+//     email:String,
+//     signin_count:u16,
+// }
 
 // methods for struct
-impl User {
-    fn printname(&self){
-        println!("hello {}", self.name);
-    }
-}
+// impl User {
+//     fn printname(&self){
+//         println!("hello {}", self.name);
+//     }
+// }
 
 // associated func - methods which doesnt have self as parameter
 // i.e the func doesnt need the instance of the type to work with
-#[derive(Debug)]
-struct Rectangle {
-    width: u32,
-    height: u32,
-}
-impl Rectangle {
-    fn square(size: u32) -> Self {
-        Self {
-            width: size,
-            height: size,
-        }
-    }
-}
+// #[derive(Debug)]
+// struct Rectangle {
+//     width: u32,
+//     height: u32,
+// }
+// impl Rectangle {
+//     fn square(size: u32) -> Self {
+//         Self {
+//             width: size,
+//             height: size,
+//         }
+//     }
+// }
 
 //tuple structs
 //used when the name the struct delivers the meaning to the field
@@ -39,14 +39,14 @@ impl Rectangle {
 pub fn structs (){
 
     //create a struct user1
-    let user1 = User {
-        active: true,
-        name: String::from("someusername123"),
-        email: String::from("someone@example.com"),
-        signin_count: 1,
-    };
+    // let user1 = User {
+    //     active: true,
+    //     name: String::from("someusername123"),
+    //     email: String::from("someone@example.com"),
+    //     signin_count: 1,
+    // };
 
-    user1.printname();
+    // user1.printname();
 
     // //create user2 from user1
     // // if we are using fields which are scalar and have Copy trait

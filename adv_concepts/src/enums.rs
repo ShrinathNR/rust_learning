@@ -20,12 +20,12 @@
 // }
 
 //match using enums
-enum Coin {
-    Penny,
-    Nickel,
-    Dime,
-    Quarter,
-}
+// enum Coin {
+//     Penny,
+//     Nickel,
+//     Dime,
+//     Quarter,
+// }
 pub fn enums() {
     // enums  are a neat way to define a type by enummerating its 
     // possible outcomes
@@ -68,11 +68,11 @@ pub fn enums() {
 }
 
 // match for Coin enum
-fn value_in_coin (coin : Coin) -> u8 {
-    match coin {
-        Coin::Penny => 1,
-        Coin::Nickel => 5,
-        Coin::Dime => 10,
-        Coin::Quarter => 25,
-    }
-}
+// fn value_in_coin (coin : Coin) -> u8 {
+//     match coin {
+//         Coin::Penny => 1,
+//         Coin::Nickel => 5,
+//         Coin::Dime => 10,
+//         Coin::Quarter => 25,
+//     }
+// }
