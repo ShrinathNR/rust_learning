@@ -1,5 +1,8 @@
 mod structs;
-use structs::hello;
+mod enums;
+use structs::structs;
+use enums::enums;
 fn main() {
-    hello();
+    structs();
+    enums();
 }

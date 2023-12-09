@@ -36,7 +36,7 @@ impl Rectangle {
 // struct Color(i32, i32, i32);
 // struct Point(i32, i32, i32);
 
-pub fn hello (){
+pub fn structs (){
 
     //create a struct user1
     let user1 = User {
