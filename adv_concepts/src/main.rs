@@ -8,4 +8,5 @@ use common_collection::common_collection;
 fn main() {
     structs();
     enums();
+    common_collection();
 }
