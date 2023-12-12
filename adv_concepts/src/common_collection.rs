@@ -1,4 +1,5 @@
-// use std::collections::HashMap;
+use core::num;
+use std::collections::HashMap;
 pub fn common_collection(){
     //vectors
     // create vectors
@@ -52,7 +53,38 @@ pub fn common_collection(){
     // println!("{:?}", scores);
 
     // challenge 1
+    let mut list = vec![4,2,5,1,8,7,5,6,7,7];
+    list.sort();
 
-    
+    let mid;
+
+    if list.len()%2 == 0 {
+        mid = &list[list.len()/2];
+    }
+    else {
+        mid = &list[(list.len()+1)/2];   
+    }
+    //median
+    println!("{}",mid);
+
+    let mut nums = HashMap::new();
+
+    for i in &list {
+        let mut count = nums.entry(i).or_insert(0);
+        *count+=1;
+    }
+    let mut max = nums.get(&list[0]).expect("no values in list");
+    let mut result = &list[0];
+
+    for (key, val) in &nums{
+        if val>max {
+            result= *key;
+            max = val;
+        }
+    }
+
+    println!("{}",result);
+
 
 }
+
