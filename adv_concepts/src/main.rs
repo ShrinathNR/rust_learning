@@ -1,15 +1,15 @@
 mod structs;
 mod enums;
 mod common_collection;
-mod error_handling;
+mod generics;
 
 use structs::structs;
 use enums::enums;
 use common_collection::common_collection;
-use error_handling::handle_err;
+use generics::generics;
 fn main() {
     // structs();
     // enums();
-    common_collection();
-    // handle_err();
+    // common_collection();
+    generics();
 }
